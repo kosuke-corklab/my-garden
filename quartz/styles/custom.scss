@@ -1,3 +1,132 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// ── Typography ──────────────────────────────────────────
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+// ── Divider ─────────────────────────────────────────────
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--secondary), transparent);
+  margin: 2rem 0;
+  opacity: 0.35;
+}
+
+// ── Blockquote ──────────────────────────────────────────
+blockquote {
+  border-left: 3px solid var(--secondary);
+  background: var(--highlight);
+  border-radius: 0 6px 6px 0;
+  padding: 0.8rem 1.2rem;
+  margin: 1.5rem 0;
+
+  p {
+    margin: 0;
+    color: var(--darkgray);
+    font-style: italic;
+  }
+}
+
+// ── Links ────────────────────────────────────────────────
+.center article a:not(.tag-link):not(.internal) {
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+// ── Tags ─────────────────────────────────────────────────
+a.tag-link {
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  background: var(--highlight);
+  border: 1px solid var(--lightgray);
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+    text-decoration: none;
+  }
+}
+
+// ── Tables ───────────────────────────────────────────────
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  font-size: 0.92em;
+
+  th {
+    background: var(--highlight);
+    font-weight: 600;
+    padding: 0.6rem 0.9rem;
+    border-bottom: 2px solid var(--lightgray);
+    text-align: left;
+  }
+
+  td {
+    padding: 0.5rem 0.9rem;
+    border-bottom: 1px solid var(--lightgray);
+    vertical-align: top;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  tr:hover td {
+    background: var(--highlight);
+  }
+}
+
+// ── Images ───────────────────────────────────────────────
+article img {
+  border-radius: 6px;
+  border: 1px solid var(--lightgray);
+  display: block;
+  margin: 1.5rem auto;
+  max-width: 100%;
+}
+
+// ── Site header ──────────────────────────────────────────
+.page-header h1 a {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+// ── Callouts ─────────────────────────────────────────────
+.callout {
+  border-radius: 6px;
+  border-left-width: 3px;
+
+  .callout-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+}
+
+// ── Graph ────────────────────────────────────────────────
+#graph-container {
+  border-radius: 8px;
+  border: 1px solid var(--lightgray);
+}

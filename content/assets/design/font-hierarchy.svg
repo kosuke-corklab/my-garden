@@ -1,0 +1,20 @@
+<svg width="380" height="175" viewBox="0 0 380 175" xmlns="http://www.w3.org/2000/svg">
+  <rect width="380" height="175" fill="none"/>
+  <!-- Background -->
+  <rect x="0" y="0" width="380" height="175" rx="6" fill="#faf8f5" stroke="#e6e0d6" stroke-width="1"/>
+  <!-- Title -->
+  <text x="18" y="52" font-size="38" fill="#26211c" font-weight="700" font-family="sans-serif">タイトル</text>
+  <rect x="250" y="28" width="118" height="24" rx="4" fill="#4a6a9e" opacity="0.12"/>
+  <text x="258" y="45" font-size="11" fill="#4a6a9e" font-weight="600" font-family="sans-serif">太ゴシック・36pt</text>
+  <!-- Heading -->
+  <text x="18" y="96" font-size="22" fill="#26211c" font-weight="600" font-family="sans-serif">見出しのテキスト</text>
+  <rect x="250" y="76" width="110" height="22" rx="4" fill="#4a6a9e" opacity="0.12"/>
+  <text x="258" y="91" font-size="11" fill="#4a6a9e" font-weight="600" font-family="sans-serif">ゴシック・22pt</text>
+  <!-- Body -->
+  <text x="18" y="130" font-size="14" fill="#48433e" font-family="sans-serif">本文テキストのサンプルです。読みやすさ重視。</text>
+  <rect x="250" y="116" width="110" height="20" rx="4" fill="#5e9988" opacity="0.12"/>
+  <text x="258" y="130" font-size="11" fill="#5e9988" font-weight="600" font-family="sans-serif">明朝体・14pt</text>
+  <!-- Divider -->
+  <line x1="18" y1="148" x2="362" y2="148" stroke="#e6e0d6" stroke-width="1"/>
+  <text x="190" y="165" text-anchor="middle" font-size="11" fill="#b0a99e" font-family="sans-serif">ジャンプ率：見出しは本文の2〜8倍が目安</text>
+</svg>
